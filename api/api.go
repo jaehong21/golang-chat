@@ -3,10 +3,11 @@ package api
 import (
 	"encoding/json"
 	"fmt"
+	"net/http"
+
 	"github.com/go-redis/redis/v7"
 	"github.com/gorilla/mux"
 	"github.com/jaehong21/golang-chat/user"
-	"net/http"
 )
 
 func HealthCheck(w http.ResponseWriter, r *http.Request) {

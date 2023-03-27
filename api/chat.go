@@ -2,10 +2,11 @@ package api
 
 import (
 	"fmt"
+	"net/http"
+
 	"github.com/go-redis/redis/v7"
 	"github.com/gorilla/websocket"
 	"github.com/jaehong21/golang-chat/user"
-	"net/http"
 )
 
 var upgrader websocket.Upgrader

@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
+	"log"
+	"net/http"
+
 	"github.com/go-redis/redis/v7"
 	"github.com/gorilla/mux"
 	"github.com/jaehong21/golang-chat/api"
-	"log"
-	"net/http"
 )
 
 var rdb *redis.Client
